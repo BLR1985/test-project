@@ -1,0 +1,16 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Link from "../components/Link.astro";
+
+---
+
+<MainLayout title="ABOUT page" description="My ABOUT page">
+	<section class="container about" aria-label="About Me">
+        <img src="/images/headshot.jpg" alt="About Me" width="200" height="330">
+        <div class="content">
+            <h1 class="h1">My blog</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium sit, officia tenetur ab dicta sint accusamus similique facere voluptas obcaecati. Omnis ea dolorum necessitatibus fuga maxime, odit aperiam dicta consequuntur, reiciendis minima vero ratione nihil temporibus cumque pariatur ducimus repellat?</p>
+            <Link href="mailto:skost@mail.ru" style="primary" text="Contact Me" />
+        </div>
+    </section> 
+</MainLayout>

@@ -1,0 +1,26 @@
+---
+import MainHead from "./MainHead.astro";
+import Footer from "../components/Footer.astro";
+import Nav from "../components/Nav.astro";
+
+
+import "../style/global.css"
+
+const {
+	title = "My Astro Blog",
+	description = "Description Blog page",
+} = Astro.props;
+
+
+---
+
+<html lang="en">
+    <MainHead {title} {description} />
+	<Nav/>
+	<body>
+		<main>
+			<slot>Какой-то текст</slot>
+		</main>
+		<Footer/>
+	</body>
+</html>
