@@ -7,7 +7,7 @@ export default defineConfig({
   image: {
     service: passthroughImageService()
   },
-  site: 'http://localhost:4321',
+  site: 'https://astro-blog-test1985.netlify.app',
   integrations: [icon({
     iconDir: "src/icons",
   }), sitemap()]
